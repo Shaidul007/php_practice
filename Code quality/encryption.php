@@ -13,7 +13,6 @@
 //     $newText .= $newLetter;
 // }
 
-
 // echo $newText . "\n";
 
 // // decryption();
@@ -48,27 +47,59 @@
 
 // echo ord($normalText[0])- ord($newText[0]); //ecnryption theke decryption - kore o ber kora jay
 
-
 // shuffle()
 
 // $string= "Shaidul";
 // $shuffleString= str_shuffle($string);
 // echo $shuffleString;
 
-
 // encryption
 
-$string= "Hello world";
-$key="3e25960a79dbc69b674cd4ec67a72c62 ";
-// $shuffleString= str_shuffle($key);
-$newKey= "2e75cca9736bc4d9b26ea27067496c6d ";
-echo $newKey;
+// $string = "Hello world";
+// $key    = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
+// // $shuffleString= str_shuffle($key);
+// $newKey = "fwdth3x4AKFTg GkRz9CYayZWpLqS7muEcJIlijnDQV5vMNU1o2Xsb60e8HBrPO ";
+// // echo $key;
 
-$encryption= "";
-for($i= 0; $i<=strlen($string); $i++){
-    $enc
+// $encryptionText = "";
+// for ( $i = 0; $i <= strlen( $string ); $i++ ) {
+//    $c
+// }
+
+// echo $encryptionText;
+
+$string = "Hello world";
+
+$key = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
+// $newKey= str_shuffle($key);
+$newKey="BJReh7DxLfX4KOaIq5EdQi62THvMncAZlY1wyP80C3okmUpsrjStgFGV bWuz9N";
+// echo $newKey;
+
+$encryotedText = "";
+
+for($i=0; $i<strlen($string); $i++){
+    $currentLetter= $string[$i];
+    // echo $currentLetter;
+    $currentPosition= strpos($key, $currentLetter);
+    $replacement= $newKey[$currentPosition];
+    $encryotedText .= $replacement;
 }
 
+echo $encryotedText;
 
 
-// 52
+// drcrypted
+
+$text="Yh44aN6a54e";
+$decryptedText= "";
+
+for($i= 0; $i<strlen($text); $i++){
+    $currentLetter= $text[$i];
+    $currentPosition= strpos($newKey, $currentLetter);
+    $replacement= $key[$currentPosition];
+    $decryptedText .= $replacement;
+}
+
+echo $decryptedText;
+
+// 38

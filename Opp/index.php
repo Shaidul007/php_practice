@@ -160,7 +160,6 @@
 // $obj= new Mycar( "BMW", "Black", "X5" );
 // $obj->car();
 
-
 // class Mycar{
 //     function myCar($name, $color, $model){
 //         echo "My car name is {$name} color is {$color} model is {$model}\n";
@@ -168,11 +167,7 @@
 // }
 
 // $carObj= new Mycar();
-// $carObj->myCar("BMW", "Black", "X5"); 
-
-
-
-
+// $carObj->myCar("BMW", "Black", "X5");
 
 // inheritance
 
@@ -191,10 +186,7 @@
 // $obj= new Son();
 // $obj->print100();
 
-
 // parent calss ke jokhon chaild change kore taile take bole Overwriting/override
-
-
 
 // override()
 
@@ -207,11 +199,11 @@
 // }
 
 // class Son extends Father{
-    // public function print100(){
-    //     for($i=0;$i<=80;$i++){
-    //         echo "$i \n";
-    //     }
-    // }
+// public function print100(){
+//     for($i=0;$i<=80;$i++){
+//         echo "$i \n";
+//     }
+// }
 // }
 
 // $obj= new Son();
@@ -234,7 +226,6 @@
 // $obj= new Son();
 // $obj->print100();
 
-
 // parent class jodi final kore deay taile nicher kono class extends ba use korte parbhe na
 
 // final class Father{
@@ -256,7 +247,6 @@
 // $obj= new Son();
 // $obj->print100();
 
-
 // abstract
 
 // abstract je class er samne likhbo setake bilupto class bola hobe tar kono object create kora jabe na
@@ -271,7 +261,7 @@
 
 // class Son extends Father{
 //     public function print100(){
-//         for($i=0;$i<=80;$i++){   
+//         for($i=0;$i<=80;$i++){
 //             echo "$i \n";
 //         }
 //     }
@@ -280,10 +270,7 @@
 // $obj= new Son();
 // $obj->print100();
 
-
-
 // constuct in inheritance
-
 
 // parent class er contstruct and child class er contstruct jodi same thake taile chaild class er object create kole chaild class er output dekhabe jodi chaild class er construct na thake taile se father er construct dore tan dibe and father er consturct er output dekhabe
 
@@ -302,9 +289,7 @@
 
 // new Son();
 
-
 // parent keyword
-
 
 // class Father{
 //    public function mainParent(){
@@ -321,7 +306,6 @@
 // $obj=new Son();
 // $obj->chaild();
 
-
 // static property
 // ati object er sathe relation bad diye class er sathe relation make kore
 // class er sathe function er direct kono relation thake na realtion hoy object er maddome
@@ -337,8 +321,6 @@
 // $newobj= new MyCalss(); //static diye 2 babe call kora jay function ke 1, object er make kore r 2, scioeresikution er maddome
 // $newobj->name();
 
-
-
 // static kono property ke amra class er bitore call korte chaile sobike static hote hobe
 
 // class MyCalss{
@@ -350,24 +332,89 @@
 // $newobj= new MyCalss();
 // $newobj->sayName();
 
-
 // Access Modifiers
 
 // public-> sob class use korte parbhe
 // private-> sudu je class er bortor thakbe se class use korte parbhe onno keu parbhe na
 // protected->
 
+// class Name{
+//     public $name;
+//     public $age;
 
-class Name{
-    public $name;
-    public $age;
+//     public function __construct($nameValue, $ageValue){
+//         $this->name=$nameValue;
+//         $this->age=$ageValue;
+//     }
+// }
 
-    public function __construct($nameValue, $ageValue){
-        $this->name=$nameValue;
-        $this->age=$ageValue;
+// $obj= new Name("Son","dsfa");
+// echo $obj->name;
+// echo $obj->age;
+
+class Dog {
+    public $color;
+    public $makeSound;
+    public $sleep;
+    // public function makeSound(){
+    //     echo "woof \n";
+    // }
+    public function __construct( $makeSound, $sleep ) {
+        $this->makeSound = $makeSound;
+        $this->sleep     = $sleep;
+    }
+
+    public function result() {
+        echo $this->makeSound;
+        echo $this->sleep;
+    }
+    // public function sleep(){
+    //     echo "I am sleeping \n";
+    // }
+
+}
+
+class Cat {
+    public $color;
+    public function makeSound() {
+        echo "meow \n";
+    }
+    public function sleep() {
+        echo "I am sleeping \n";
     }
 }
 
-$obj= new Name("Son","dsfa");
-echo $obj->name;
-echo $obj->age;
+class Fish {
+    public $color;
+    public function makeSound() {
+        echo "I am a fish \n";
+    }
+}
+
+$puppy = new Dog( "woof", "sleep" );
+// echo $puppy->color="Green \n";
+// echo "Puppy's color is: " . $puppy->color . "\n";
+$puppy->result();
+
+$catty = new Cat();
+// echo $catty->color="Black \n";
+
+$fish = new Fish();
+// echo $fish->color;
+
+// class Dog{
+//     public $makeSound;
+//     public function __construct($makeSound)
+//     {
+//         $this->makeSound= $makeSound;
+
+//     }
+
+//    public function show(){
+//        echo $this->makeSound;
+//    }
+// }
+
+// $puppy= new Dog("woof");
+
+// $puppy->show();
