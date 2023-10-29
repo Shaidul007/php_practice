@@ -1,0 +1,33 @@
+[
+    {
+        "username": "Admin",
+        "email": "admin@mail.com",
+        "password": "$2y$10$bxc6VQ8nfMR52CASsRwF0uweK2HLY.VwOS0RLJ\/6Sgsl9UUWAj4TO",
+        "id": 1,
+        "role": "Admin"
+    },
+    {
+        "username": "mynumila",
+        "email": "gibiwuvef@mailinator.com",
+        "password": "$2y$10$iRTmy0RF5heW.Ul\/xW8aQuBbeqriGhRVw0gb.pIrCKH978aLGZQJm",
+        "registration": "",
+        "id": 842507,
+        "role": "user"
+    },
+    {
+        "username": "rony",
+        "email": "rony@mail.com",
+        "password": "$2y$10$.Fhkhm0AZKSKwDEcY1EYFueJtwVaTwXUFuIL0ExNYL0v\/BtVtqfK6",
+        "registration": "",
+        "id": 641460,
+        "role": "user"
+    },
+    {
+        "username": "rony",
+        "email": "rony@mail.com",
+        "password": "$2y$10$YHEpmjkpVMgAUK4JOaj92.9z9F0r9N3r1UEU6fikJHD3MJ.YOadZ.",
+        "registration": "",
+        "id": 394967,
+        "role": "user"
+    }
+]

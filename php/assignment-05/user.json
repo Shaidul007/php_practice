@@ -1,0 +1,9 @@
+[
+    {
+        "username": "Admin",
+        "email": "admin@mail.com",
+        "password": "$2y$10$rCknKilR901CXCUGpvmkjO6QDQUI\/LxtBdb8\/gwtSu8rMnI0ymofO",
+        "id": 1,
+        "role": "admin"
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "rony@mail.com": {
+        "username": "rony",
+        "password": "12345678",
+        "role": "Admin"
+    },
+    "zbc@hmail.com": {
+        "username": "zbc",
+        "password": "12345678",
+        "role": ""
+    },
+    "nonegysixe@mailinator.com": {
+        "username": "nyfefy",
+        "password": "Pa$$w0rd!",
+        "role": ""
+    }
+}

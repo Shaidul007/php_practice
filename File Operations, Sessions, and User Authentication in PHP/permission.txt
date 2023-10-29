@@ -1,0 +1,8 @@
+Owner | Group | Rest of the world
+7     | 5     | 5
+6     | 4     | 4
+6     | 0     | 0 //Common permission
+
+Read = 4
+Write = 2
+Exicute = 1
